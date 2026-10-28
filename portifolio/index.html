@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Redes & Infraestrutura de TI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="navbar">
+        <div class="logo"></div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial / Apresentação -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1> <span>computação aplicada</span></h1>
+            <p>Estudante de Redes , Sistemas e Infraestrutura</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre o Aluno -->
+    <section id="sobre" class="section">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-container">
+            <div class="sobre-texto">
+                <p>
+                    melhoria contínua nas áreas de infraestrutura e Ciência da Computação, focado no desenvolvimento de erp complexo com tecnologias em virtualização,docker node e workflows que promovem automação e facilita a utilização do usuario, aplicando conceitos de ux-ui. os sistemas Linux/Windows Server, infraestrutura de redes, serviços de diretório, monitoramento compõe o essencial em infraestrutura.
+                </p>
+                <div class="skills">
+                    <span class="skill-tag"><i class="fab fa-linux"></i> Linux / Bash</span>
+                    <span class="skill-tag"><i class="fas fa-network-wired"></i> Cisco Packet Tracer</span>
+                    <span class="skill-tag"><i class="fas fa-server"></i> Samba AD DC / BIND9</span>
+                    <span class="skill-tag"><i class="fas fa-chart-line"></i> Zabbix</span>
+                    <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Desenvolvidos -->
+    <section id="projetos" class="section bg-alt">
+        <h2>Projetos Desenvolvidos</h2>
+        
+        <!-- Botões de Filtro com JS -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="servidores">Servidores</button>
+            <button class="filter-btn" data-filter="redes">Redes</button>
+            <button class="filter-btn" data-filter="monitoramento">Monitoramento</button>
+            <button class="filter-btn" data-filter="erp">ERP</button>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Projeto 1 -->
+            <article class="project-card" data-category="servidores">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Samba AD DC Controller">
+                </div>
+                <div class="project-info">
+                    <span class="category-badge">Servidores</span>
+                    <h3>Domain Controller com Samba AD DC & BIND9</h3>
+                    <p>
+                        Implementação e configuração de um controlador de domínio (SRVLNX.LOCAL) utilizando Samba4 integrado ao servidor DNS BIND9, Kerberos e serviços DHCP em ambiente Linux, unindo estações Windows 10 e Linux ao domínio.
+                    </p>
+                    <div class="project-links">
+                        
+                </div>
+            </article>
+
+            <!-- Projeto 2 -->
+            <article class="project-card" data-category="monitoramento">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Monitoramento Zabbix">
+                </div>
+                <div class="project-info">
+                    <span class="category-badge">Monitoramento</span>
+                    <h3>Infraestrutura de Monitoramento com Zabbix</h3>
+                    <p>
+                        Implantação do servidor de monitoramento Zabbix via contêineres Docker para coleta de métricas (CPU, RAM, tráfego de interface SNMP/Agent) e alertas automatizados de hosts na rede local.
+                    </p>
+                    <div class="project-links">
+                        
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projeto 3 -->
+            <article class="project-card" data-category="redes">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Topologia Cisco Packet Tracer">
+                </div>
+                <div class="project-info">
+                    <span class="category-badge">Redes</span>
+                    <h3>Topologia Corporativa Redundante (Cisco)</h3>
+                    <p>
+                        Design e simulação de uma topologia de rede empresarial contendo VLANs, roteamento inter-VLAN, protocolo Spanning Tree (STP), serviço DHCP e regras de firewall via ACLs no Cisco Packet Tracer.
+                    </p>
+                    <div class="project-links">
+                        
+                    </div>
+                </div>
+            </article>
+             <!-- Projeto 4 -->
+            <article class="project-card" data-category="erp">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="sistema de gestão">
+                </div>
+                <div class="project-info">
+                    <span class="category-badge">erp</span>
+                    <h3>tecnologia de gestão empresarial</h3>
+                    <p>
+                        sistemas integrados com cadeias logisticas, estoques, vendas comunicação interligadas que facilitam a utilização do usuario.
+                    </p>
+                    <div class="project-links">
+                        
+                    </div>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <div class="contato-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <div id="form-status" class="form-status"></div>
+            </form>
+
+            <div class="contato-links">
+                
+                <a href="www.linkedin.com/in/luiz-gustavo-6935aa198" target="_blank" class="contato-item"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/luizreismacedo-afk" target="_blank" class="contato-item"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o curso de Redes de Computadores.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
